@@ -28,11 +28,6 @@
     "plugins": [
       "expo-router"
     ],
-    "scheme": "dailyquotes",
-    "extra": {
-      "eas": {
-        "projectId": "auto"
-      }
-    }
+    "scheme": "dailyquotes"
   }
 }
