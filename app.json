@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Daily Quotes",
-    "slug": "Delly-qutos",
+    "name": "daily-quotes",
+    "slug": "daily-quotes",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -12,14 +12,15 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.hk1198274.dailyquotes"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.anonymous.Dellyqutos"
+      "package": "com.hk1198274.dailyquotes"
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -27,6 +28,11 @@
     "plugins": [
       "expo-router"
     ],
-    "scheme": "dellyqutos"
+    "scheme": "dailyquotes",
+    "extra": {
+      "eas": {
+        "projectId": "auto"
+      }
+    }
   }
 }
