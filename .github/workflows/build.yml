@@ -23,11 +23,6 @@ jobs:
       - name: Install dependencies
         run: npm install --legacy-peer-deps
 
-      - name: Initialize EAS Project
-        run: eas project:init --non-interactive || true
-        env:
-          EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}
-
       - name: Build Android APK on EAS
         run: eas build --platform android --profile preview --non-interactive
         env:
