@@ -17,14 +17,11 @@ jobs:
         with:
           node-version: 18
 
-      - name: Setup EAS CLI
-        uses: expo/expo-github-action@v8
-        with:
-          eas-version: latest
-          token: ${{ secrets.EXPO_TOKEN }}
+      - name: Install EAS CLI globally
+        run: npm install -g eas-cli
 
       - name: Install dependencies
-        run: npm ci || npm install
+        run: npm install
 
       - name: Build Android APK on EAS
         run: eas build --platform android --profile preview --non-interactive
